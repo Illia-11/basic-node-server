@@ -4,15 +4,17 @@
 // import * as MyMath from "./myMath.js";
 
 // іменний імпорт (CommonJS)
-const { test, testFunc: myTestFunc } = require("./myMath.js");
+const { test, testFunc: myTestFunc } = require("./myMath");
 
 // // імпорт за замовчанням (ESModules)
 // import MyMathModule from "./myMath.js";
 
 // // імпорт за замовчанням (CommonJS)
-const myMathExports = require("./myMath.js");
+const myMathExports = require("./myMath");
 
 console.log(myMathExports);
+
+const nodeExamples = require("..");
 
 // console.log(MyMath);
 
@@ -23,14 +25,14 @@ console.log(myMathExports);
 
 // console.log(module);
 
-console.log("=======");
-// task 1
+// console.log("=======");
+// // task 1
 
-const { taskFunc2 } = require("./taskFile2.js");
+// const { taskFunc2 } = require("./taskFile2.js");
 
-console.log(taskFunc2);
+// console.log(taskFunc2);
 
-const taskFunc1Export = require("./taskFile1.js");
+// const taskFunc1Export = require("./taskFile1.js");
 
-console.log(taskFunc1Export);
-console.log("=======");
+// console.log(taskFunc1Export);
+// console.log("=======");
