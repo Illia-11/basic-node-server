@@ -22,3 +22,15 @@ console.log(myMathExports);
 // console.log(__filename); // шлях до файлу, що запущено
 
 // console.log(module);
+
+console.log("=======");
+// task 1
+
+const { taskFunc2 } = require("./taskFile2.js");
+
+console.log(taskFunc2);
+
+const taskFunc1Export = require("./taskFile1.js");
+
+console.log(taskFunc1Export);
+console.log("=======");
